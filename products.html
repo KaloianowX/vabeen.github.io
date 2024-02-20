@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vape Shop - Products</title>
+    <style>
+        /* Add your CSS styles here */
+        /* This is just a placeholder */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: #ccc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .contact-form {
+            margin-top: 20px;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .notification {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vabeen Shop Burgas</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Начало</a></li>
+            <li><a href="products.html">Продукти</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="product">
+            <h3>Vabeen Sakura Grape</h3>
+            <img src="sakuragrape.png" alt="Vabeen Sakura Grape">
+            <p>Vabeen Sakura Grape с освежаващ вкус на грозде , LCD екран , опция за зареждане и 10К дръпки !!!</p>
+            <p>Цена: 40 ЛВ</p>
+            <button onclick="addToCart()">Купи !</button>
+        </div>
+        <div class="product">
+            <h3>Vabeen Kiwi Passionfruit Guava</h3>
+            <img src="kiwipassionfruitguava.png" alt="Product 2">
+            <p>Vabeen с тропически нотки на киви , маракуя и гуава. Вейпа притежава LCD екран , опция за зареждане и 10К дръпки !!!</p>
+            <p>Цена: 40 ЛВ</p>
+            <button onclick="addToCart()">Купи !</button>
+        </div>
+        <div class="product">
+            <h3>Vabeen Blue Raspberry Lemon</h3>
+            <img src="blueraspberrylemon.png" alt="Product 3">
+            <p>Vabeen със свежи нотки на синя малина в комбинация с лимон. Вейпа притежава LCD екран , опция за зареждане и 10К дръпки !!!</p>
+            <p>Цена: 40 ЛВ</p>
+            <button onclick="addToCart()">Купи !</button>
+        </div>
+        <div class="product">
+            <h3>Vabeen Strawberry Watermelon</h3>
+            <img src="strawberrywatermelon.png" alt="Product 4">
+            <p>Спомни си за лятото със свежият вкус на Vabeen с ягода и диня. Вейпа притежава LCD екран , опция за зареждане и 10К дръпки !!!</p>
+            <p>Цена: 40 ЛВ</p>
+            <button onclick="addToCart()">Купи !</button>
+        </div>
+        <div class="product">
+            <h3>Vabeen Lush Ice</h3>
+            <img src="lushice.png" alt="Product 5">
+            <p>Vabeen с освежаващ вкус на ледени плодове. Вейпа притежава LCD екран , опция за зареждане и 10К дръпки !!!</p>
+            <p>Цена: 40 ЛВ</p>
+            <button onclick="addToCart()">Купи !</button>
+        </div>
+        <div class="product">
+            <h3>Vabeen Caramel Ice Cream</h3>
+            <img src="caramelicecream.png" alt="Product 2">
+            <p>Vabeen с вкус на сладолед с карамел. Вейпа притежава LCD екран , опция за зареждане и 10К дръпки !!!</p>
+            <p>Цена: 40 ЛВ</p>
+            <button onclick="addToCart()">Купи !</button>
+        </div>
+         <div class="product">
+            <h3>Vabeen Strawberry Fudge</h3>
+            <img src="strawberryfudge.png" alt="Product 2">
+            <p>Vabeen с мек вкус на ягодов кекс. Вейпа притежава LCD екран , опция за зареждане и 10К дръпки !!!</p>
+            <p>Цена: 40 ЛВ</p>
+            <button onclick="addToCart()">Купи !</button>
+        </div>
+    </div>
+  <br>
+  <br>
+  <br>
+    <footer>
+        <p>&copy; 2024 Vabeen Shop Burgas. Всички права запазени.</p>
+    </footer>
+
+    <script>
+        function addToCart() {
+            alert("За да поръчате този артикул ще трябва да се свържете с нас. Ще бъдете пренасочен към страницата с контакти");
+            window.location.href = "contacts.html";
+        }
+    </script>
+</body>
+</html>
